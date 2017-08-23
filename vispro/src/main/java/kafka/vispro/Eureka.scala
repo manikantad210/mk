@@ -37,9 +37,9 @@ object Eureka {
     makeString.foreach { s =>
       println(s)
     }
-    def twice(op: Double => Double) (x: Double) = op(op(op(x)))
-       val ddd = twice(_ * 3)(3)
-       
+    def twice(op: Double => Double)(x: Double) = op(op(op(x)))
+    val ddd = twice(_ * 3)(3)
+
     df.printSchema()
     val stru = df.schema
     stru.map { x => println(x.name) }
@@ -66,13 +66,3 @@ object Eureka {
   matchh(10)
 
 }
-
-
-
-
-
-
-
-
-
-
